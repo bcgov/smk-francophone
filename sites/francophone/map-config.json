@@ -24,17 +24,17 @@
 			],
 			"center": [
 				-124.76074218750003,
-				53.88072825385896
+				51.88072825385896
 			],
-			"zoom": 5.0
+			"zoom": 6.0
 		},
-		"baseMap": "Streets",
+		"baseMap": "Imagery",
 		"activeTool": "about",
 		"clusterOption": {
 			"showCoverageOnHover": false
 		},
 		"device": "auto",
-		"themes": [],
+		"themes":["alpha"],
 		"deviceAutoBreakpoint": 500,
 		"panelWidth": 400
 	},
@@ -42,8 +42,9 @@
 		{
 			"type": "about",
 			"enabled": true,
+			"icon": "map",
 			"title": "Sur / About",
-			"content": "<h1 class=\"title\"><sup>À propos de cette application</sup></h1>   <p id=\"about-text\" class=\"about-text\"><font size=\"2\">\n\n<font face=\"Arial\">\nCette carte vous permet de repérer les ressources et les services en \nfrançais offerts en Colombie-Britannique. Cinq domaines y sont affichés \nsous forme de couches successives et permettent une recherche par sujet,\n par catégorie et par zone géographique. À partir du menu, vous pouvez \nutiliser l’outil de la carte pour l’afficher en plans plus rapprochés \n(zoom) ou pour la voir en mode panoramique.&nbsp;&nbsp; &nbsp;\n<br>\n\n<br>\nVous pouvez vous concentrer sur une ou plusieurs couches à la fois avec \nle menu \"domaines de la carte\". Vous pouvez aussi effectuer une \nrecherche à partir du menu \"recherche par catégorie\" ou à l’intérieur \nd’une zone géographique précise, sous \"chercher à proximité\". \n<br>\n\n<br>\nUne fois que vous aurez trouvé un service, cliquez sur le marqueur de la\n carte pour obtenir de l’information à son sujet et en connaître \nl’emplacement. Les lieux offrant plusieurs services s’afficheront avec \nplusieurs marqueurs.\n</font>\n\n</font>\n\n</p><br><h1 class=\"title\"><sup>About this Application</sup></h1> <p></p>  <p>\n\n</p><p class=\"MsoNormal\" style=\"background:white\">\n\n<font face=\"Arial\">\n\n<span style=\"font-size:10.0pt;line-height:115%;mso-ascii-font-family:Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:Arial;mso-ansi-language:EN-CA;mso-fareast-language:FR-CA\" lang=\"EN-CA\">\nThis map allows you to find francophone resources and services in \nBritish Columbia. Five sectors are displayed as layers to allow you to \ndo a search by subject, category and area. From the menu, you can \n</span>\n\n<span style=\"font-size:10.0pt;line-height:115%;mso-ascii-font-family:Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-CA;mso-fareast-language:FR-CA\" lang=\"EN-CA\">\nuse the map tool to zoom and pan around the map.&nbsp; \n\n\n\n\n</span>\n\n</font>\n\n</p>\n\n<p class=\"MsoNormal\" style=\"background:white\">\n\n<span style=\"font-size: 10pt; line-height: 115%;\">\n\n<font face=\"Arial\">\nYou can focus on one layer or a combination of layers using the \"Search \nby Sector\" menu. You can also search for specific locations and services using the \"Search by Category\" menu or within a specific area under `Find\n Nearby`.&nbsp;\n</font>\n\n</span>\n\n</p>\n\n<p></p>\n\n\n\n\n\n<p class=\"MsoNormal\" style=\"mso-outline-level:3;background:white\">\n\n<span style=\"font-size: 10pt; line-height: 115%;\">\n\n<font face=\"Arial\">\nOnce you've found a service, click the marker on the map to get \ninformation about the resource and its location. Please note that some \nlocations offer many services, and therefore will show many service \nmarkers.&nbsp;\n</font>\n\n</span>\n\n</p>\n\n<p class=\"MsoNormal\" style=\"mso-outline-level:3;background:white\">\n\n<span style=\"line-height: 115%;\">\n\n<font size=\"2\" face=\"Arial\">\nThe search box found above the map allows you to quickly navigate to a \nspecific address, city or geographic feature such as 'Mount Douglas'.\n</font>\n\n</span>\n\n</p><p><a href=\"http://apps.gov.bc.ca/pub/dmf-viewer/?siteid=4645951626552572231\">\n\n</a>\n\n</p>\n"
+			"content": "<h3>À propos de cette application</h3><span style=\"background-color: initial; color: inherit;\"><p>Cette carte vous permet de repérer les ressources et les services en français offerts en Colombie-Britannique. Cinq domaines y sont affichés sous forme de couches successives et permettent une recherche par sujet, par catégorie et par zone géographique. À partir du menu, vous pouvez utiliser l’outil de la carte pour l’afficher en plans plus rapprochés (zoom) ou pour la voir en mode panoramique.</p><p>Vous pouvez vous concentrer sur une ou plusieurs couches à la fois avec le menu \"domaines de la carte\". Vous pouvez aussi effectuer une recherche à partir du menu \"recherche par catégorie\" ou à l’intérieur d’une zone géographique précise, sous \"chercher à proximité\".</p><p>Une fois que vous aurez trouvé un service, cliquez sur le marqueur de la carte pour obtenir de l’information à son sujet et en connaître l’emplacement. Les lieux offrant plusieurs services s’afficheront avec plusieurs marqueurs.</p><span><h3>About this Application</h3><span style=\"background-color: initial; color: inherit;\"><p>This map allows you to find francophone resources and services in British Columbia. Five sectors are displayed as layers to allow you to do a search by subject, category and area. From the menu, you can use the map tool to zoom and pan around the map.</p></p>You can focus on one layer or a combination of layers using the \"Search by Sector\" menu. You can also search for specific locations and services using the \"Search by Category\" menu or within a specific area under \"Find Nearby\".</p><p>Once you've found a service, click the marker on the map to get information about the resource and its location. Please note that some locations offer many services, and therefore will show many service markers.</p><p>The search box found above the map allows you to quickly navigate to a specific address, city or geographic feature such as 'Mount Douglas'.</p></span><p><a href=\"http://apps.gov.bc.ca/pub/dmf-viewer/?siteid=4645951626552572231\" target=\"new\">Old DMF Site</a></p>"
 		},
 		{
 			"type": "coordinate",
@@ -51,7 +52,7 @@
 		},
 		{
 			"type": "attribution",
-			"enabled": true
+			"enabled": false
 		},
 		{
 			"type": "layers",
@@ -138,7 +139,7 @@
 		},
 		{
 			"type": "baseMaps",
-			"enabled": true,
+			"enabled": false,
 			"title": "Cartes de base / Base Maps",
 			"choices": [
 				"Topographic",
@@ -170,8 +171,11 @@
 		},
 		{
 			"type": "identify",
+			"widgetComponent":null,
 			"enabled": true,
-			"title": "Identifier le panneau / Identify Panel",
+			"showPanel": false,
+			"title": "Identifier / Identify",
+			"icon": "place",
 			"style": {
 				"strokeWidth": 1.0,
 				"strokeStyle": "1, 1",
@@ -192,9 +196,57 @@
 			"tolerance": 5
 		},
 		{
-			"type": "search",
-			"enabled": true
+			"type": "query",
+			"enabled": true,
+			"icon": "image",
+			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_TOURISM_SVW-3961--search-sites-touristiques",
+			"position": "toolbar",
+			"showPanel": true
 		},
+		{
+			"type": "query",
+			"enabled": true,
+			"icon": "room_service",
+			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_SERVICE_DIRECTORY_SVW-3964--search-répertoire-des-services-en-français",
+			"position": "toolbar",
+			"showPanel": true
+		},
+		{
+			"type": "query",
+			"enabled": true,
+			"title": "Query",
+			"icon": "local_hospital",
+			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_HLTH_PROFESSIONAL_SVW-3963--search-professionnels-de-la-santé-parlant-français",
+			"position": "toolbar",
+			"showPanel": true
+		},
+		{
+			"type": "query",
+			"enabled": true,
+			"title": "Query",
+			"icon": "child_care",
+			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_EARLY_CHILDCARE_SVW-3962--search-services-à-la-petite-enfance",
+			"position": "toolbar",
+			"showPanel": true
+		},
+		{
+			"type": "query",
+			"enabled": true,
+			"title": "Query",
+			"icon": "people",
+			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_EMPL_SRVCS_OFFICES_SVW-3958--search-Work-BC–centres-de-services-à-l’emploi",
+			"position": "toolbar",
+			"showPanel": true
+		},
+		{
+			"type": "query",
+			"enabled": true,
+			"title": "Query",
+			"icon": "school",
+			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW-3601--search-Écoles-d’immersion-francophones",
+			"position": "toolbar",
+			"showPanel": true
+		},		
 		{
 			"type": "list-menu",
 			"enabled": true
@@ -208,56 +260,8 @@
 			"enabled": false
 		},
 		{
-			"type": "query",
-			"enabled": true,
-			"icon": "location_searching",
-			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_TOURISM_SVW-3961--search-sites-touristiques",
-			"position": "toolbar",
-			"showPanel": true
-		},
-		{
-			"type": "query",
-			"enabled": true,
-			"icon": "location_searching",
-			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_SERVICE_DIRECTORY_SVW-3964--search-répertoire-des-services-en-français",
-			"position": "toolbar",
-			"showPanel": true
-		},
-		{
-			"type": "query",
-			"enabled": true,
-			"title": "Query",
-			"icon": "location_searching",
-			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_HLTH_PROFESSIONAL_SVW-3963--search-professionnels-de-la-santé-parlant-français",
-			"position": "toolbar",
-			"showPanel": true
-		},
-		{
-			"type": "query",
-			"enabled": true,
-			"title": "Query",
-			"icon": "location_searching",
-			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_EARLY_CHILDCARE_SVW-3962--search-services-à-la-petite-enfance",
-			"position": "toolbar",
-			"showPanel": true
-		},
-		{
-			"type": "query",
-			"enabled": true,
-			"title": "Query",
-			"icon": "location_searching",
-			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_EMPL_SRVCS_OFFICES_SVW-3958--search-Work-BC–centres-de-services-à-l’emploi",
-			"position": "toolbar",
-			"showPanel": true
-		},
-		{
-			"type": "query",
-			"enabled": true,
-			"title": "Query",
-			"icon": "location_searching",
-			"instance": "pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW-3601--search-Écoles-d’immersion-francophones",
-			"position": "toolbar",
-			"showPanel": true
+			"type": "search",
+			"enabled": true
 		}
 	],
 	"layers": [
@@ -267,9 +271,10 @@
 			"title": "Sites touristiques / Tourism Sites",
 			"isVisible": true,
 			"attribution": "",
-			"metadataUrl": "",
+			"metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/tourism-sites-francophone",
 			"opacity": 0.65,
 			"isQueryable": true,
+			"popupTemplate":"!TEST!",
 			"attributes": [
 				{
 					"id": "OCCUPANT_NAME",
