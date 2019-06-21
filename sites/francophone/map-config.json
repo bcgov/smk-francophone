@@ -139,7 +139,7 @@
 		},
 		{
 			"type": "baseMaps",
-			"enabled": false,
+			"enabled": true,
 			"title": "Cartes de base / Base Maps",
 			"choices": [
 				"Topographic",
