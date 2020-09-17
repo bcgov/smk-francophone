@@ -1,0 +1,13 @@
+{
+    "name": "bcFrancophonieMap",
+    "version": "0.0.1",
+    "description": "This map allows you to find francophone resources and services in British Columbia. Five sectors are displayed as layers to allow you to do a search by subject, category and area.From the menu, you can use the map tool to zoom and pan around the map. ",
+    "author": "ndegreef",
+    "dependencies": {
+        "smk": "1.0.0-beta.2",
+        "http-server": "^0.12.3"
+    },
+    "scripts": {
+        "view": "http-server -o -c-1"
+    }
+}
