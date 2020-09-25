@@ -4,16 +4,16 @@
         "type": "leaflet",
         "location": {
             "center": [
-                -123.40953247812786,
-                51.18629516737224
+                -127.82952663705254,
+                54.63326752630257
             ],
             "extent": [
-                -128.43028443125283,
-                48.37091716621485,
-                -118.38878052500286,
-                53.83962537777387
+                -141.97241761600205,
+                48.217476402735954,
+                -113.68663565810301,
+                60.175502362490285
             ],
-            "zoom": 6
+            "zoom": 4.295556789799106
         },
         "baseMap": "Imagery",
         "device": "auto"
@@ -257,46 +257,45 @@
                 {
                     "id": "schools-k-12-query-0",
                     "title": "Find Schools",
-                    "description": "Users can search for schools according to specific criteria.",
+                    "description": "Users can search for schools according to specific criteria.  Matches are based on all criteria.",
                     "parameters": [
                         {
                             "id": "parameter-0",
-                            "title": "CORE_FRENCH_OFFERED",
-                            "type": {
-                                "isTrusted": true
-                            },
-                            "value": "Yes"
+                            "title": "Francophone Program Offered?",
+                            "type": "select-unique",
+                            "uniqueAttribute": "FRANCOPHONE_PROGRAM_OFFERED"
                         },
                         {
                             "id": "parameter-1",
-                            "title": "Franco",
-                            "type": {
-                                "isTrusted": true
-                            },
-                            "value": "Yes"
+                            "title": "Core French Offered?",
+                            "type": "select-unique",
+                            "value": "",
+                            "uniqueAttribute": "CORE_FRENCH_OFFERED"
                         },
                         {
                             "id": "parameter-2",
-                            "title": "Early",
-                            "type": {
-                                "isTrusted": true
-                            },
-                            "value": "Yes"
+                            "title": "Early French Immersion Offered?",
+                            "type": "select-unique",
+                            "uniqueAttribute": "EARLY_FRENCH_IMMERSION_OFFERED"
                         },
                         {
                             "id": "parameter-3",
-                            "title": "Late",
-                            "type": {
-                                "isTrusted": true
-                            },
-                            "value": "Yes"
+                            "title": "Late French Immersion Offered?",
+                            "type": "select-unique",
+                            "uniqueAttribute": "LATE_FRENCH_IMMERSION_OFFERED"
+                        },
+                        {
+                            "id": "parameter-4",
+                            "title": "Locality",
+                            "type": "select-unique",
+                            "uniqueAttribute": "LOCALITY"
                         }
                     ],
                     "predicate": []
                 }
             ],
             "useClustering": true,
-            "dataUrl": "https://openmaps.gov.bc.ca/geo/ows?service=WFS&version=2.0&request=GetFeature&typeName=pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW&outputFormat=application/json&srsname=EPSG:4326",
+            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW&styles=3601&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
             "style": {
                 "marker": true,
                 "stroke": false,
@@ -506,7 +505,7 @@
             ],
             "queries": null,
             "useClustering": true,
-            "dataUrl": "https://openmaps.gov.bc.ca/geo/ows?service=WFS&version=2.0&request=GetFeature&typeName=pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_HLTH_PROFESSIONAL_SVW&outputFormat=application/json&srsname=EPSG:4326",
+            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_HLTH_PROFESSIONAL_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_HLTH_PROFESSIONAL_SVW&styles=3601&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
             "style": {
                 "marker": true,
                 "stroke": false,
@@ -734,7 +733,7 @@
             ],
             "queries": null,
             "useClustering": true,
-            "dataUrl": "https://openmaps.gov.bc.ca/geo/ows?service=WFS&version=2.0&request=GetFeature&typeName=pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_SERVICE_DIRECTORY_SVW&outputFormat=application/json&srsname=EPSG:4326",
+            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_SERVICE_DIRECTORY_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_SERVICE_DIRECTORY_SVW&styles=3957&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
             "style": {
                 "marker": true,
                 "stroke": false,
@@ -938,7 +937,7 @@
             ],
             "queries": null,
             "useClustering": true,
-            "dataUrl": "https://openmaps.gov.bc.ca/geo/ows?service=WFS&version=2.0&request=GetFeature&typeName=pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_EARLY_CHILDCARE_SVW&outputFormat=application/json&srsname=EPSG:4326",
+            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_EARLY_CHILDCARE_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_EARLY_CHILDCARE_SVW&styles=3601&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
             "style": {
                 "marker": true,
                 "stroke": false,
@@ -1154,7 +1153,7 @@
             ],
             "queries": null,
             "useClustering": true,
-            "dataUrl": "https://openmaps.gov.bc.ca/geo/ows?service=WFS&version=2.0&request=GetFeature&typeName=pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_EMPL_SRVCS_OFFICES_SVW&outputFormat=application/json&srsname=EPSG:4326",
+            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_EMPL_SRVCS_OFFICES_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_EMPL_SRVCS_OFFICES_SVW&styles=3958&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
             "style": {
                 "marker": true,
                 "stroke": false,
@@ -1382,7 +1381,7 @@
             ],
             "queries": null,
             "useClustering": true,
-            "dataUrl": "https://openmaps.gov.bc.ca/geo/ows?service=WFS&version=2.0&request=GetFeature&typeName=pub:WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_TOURISM_SVW&outputFormat=application/json&srsname=EPSG:4326",
+            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_TOURISM_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_FRPH_TOURISM_SVW&styles=3601&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
             "style": {
                 "marker": true,
                 "stroke": false,
@@ -1403,7 +1402,7 @@
                 "point": true,
                 "title": " "
             },
-            "popupTemplate": "<table border=\"0\" width=\"100%\">\n<tbody>\n<tr colspan=\"2\">\n<td colspan=\"2\"><b>{{ feature.properties['OCCUPANT_NAME'] }}</b> - {{ feature.properties['SERVICE_NAME'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Description:</b></td>\n<td>{{ feature.properties['DESCRIPTION'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Contacts:</b></td>\n<td>{{ feature.properties['CONTACT_NAMES'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Address:</b></td>\n<td>{{ feature.properties['STREET_ADDRESS'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Locality:</b></td>\n<td>{{ feature.properties['LOCALITY'] }} </td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Region:</b></td>\n<td>{{ feature.properties['TOURISM_AREA'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Email:</b></td>\n<td>{{ feature.properties['CONTACT_EMAIL'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Phone:</b></td>\n<td>{{ feature.properties['CONTACT_PHONE'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Website:</b></td>\n<td>{{ feature.properties['WEBSITE_URL'] }}</td>\n</tr>\n</tbody>\n</table>"
+            "popupTemplate": "<div>\n<b>{{ feature.properties['OCCUPANT_NAME'] }}</b>\n<br>\n({{ feature.properties['SERVICE_NAME'] }})<br>\n<table border=\"0\" width=\"100%\">\n<tbody>\n<tr colspan=\"2\">\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Description</b></td>\n</tr><tr>\n</tr><tr>\n<td style=\"overflow-wrap:anywhere\" colspan=\"2\">{{ feature.properties['DESCRIPTION'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Contacts</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['CONTACT_NAMES'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Address</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['STREET_ADDRESS'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Locality</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['LOCALITY'] }} </td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Region</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['TOURISM_AREA'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Email</b></td>\n</tr>\n<tr>\n<td><a v-bind:href=\"'mailto:' + feature.properties.CONTACT_EMAIL\">{{ feature.properties.CONTACT_EMAIL }}</a></td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Phone</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['CONTACT_PHONE'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Website</b></td>\n</tr>\n<tr>\n<td style=\"overflow-wrap:anywhere\"><a v-bind:href=\"feature.properties.WEBSITE_URL\" target=\"new\">{{ feature.properties['WEBSITE_URL'] }}</a></td>\n</tr>\n</tbody>\n</table></div>"
         }
     ],
     "tools": [
@@ -1636,7 +1635,7 @@
             "title": "What will I find on the map?",
             "useComponent": true,
             "component": {
-                "template": "<div>The data for each layer is provided by the Provincial organizations immersed in the specific sector. If you would like to be added to the map, please contact the corresponding sector as listed below. The organizations will regularly provide updates to refresh the map.<br>If you have questions or comments on the current map, please contact the Francophone Affairs Program at <a href=\"mailto:FAP@gov.bc.ca?Subject=Carte%20de%20la%20francophonie%20/%20Francophonie%20map\">FAP@gov.bc.ca</a>.\n<br><br>\n<img src=\"assets/pin-blue.png\"><b>Early Childhood Care - Francophone <br></b><br>Data include: <br><ul><li>Group Child Care</li><li>Family Child Care</li><li>Preschools</li><li>Preschool and Group Child Care</li><li>Strong Starts Program</li></ul>Data provided by the <a href=\"mailto:info@fpfcb.bc.ca\" target=\"_top\">Fédération des parents francophones de la C.-B. </a><br><br><img src=\"assets/pin-red.png\"><b>Health Professionals - Francophone<br><br></b></div><div>Data include:&nbsp;</div><div><ul><li>Dietitian</li><li>Holistic Nutritionist</li><li>Massage Therapist</li><li>Optician</li><li>Optometrist</li><li>Pain Management</li><li>Physiotherapist</li><li>Psychologist</li><li>Radiation</li><li>Oncology</li><li>Registered</li><li>Clinical Counsellor</li><li>Registered Occupational Therapist</li><li>Registered Social Worker</li><li>Speech Therapist</li></ul></div><div><br></div><div>Data provided by <a href=\"mailto:info@resosante.ca\" target=\"_top\">Réso-Santé</a><br><br><img src=\"assets/pin-yellow.png\"><b>Service Directory - Francophone</b></div><div><br></div><div>Data include:&nbsp;</div><div><ul><li>Accountants</li><li>Architects</li><li>Arts / Graphics / Printing / Promotion</li><li>Chamber of Commerce</li><li>Churches</li><li>Community Centres / Yoga Classes</li><li>Diplomatic Representations</li><li>Education; Schools, Preschools and Daycare</li><li>Employment Services</li><li>Francophone Association</li><li>Government</li><li>Hair Styling and Beauty Parlor</li><li>Health Services</li><li>Hospitality</li><li>Immigrant Services</li><li>Insurance and Financial Services</li><li>IT Support Services</li><li>Lawyers</li><li>Medias / Communication / Web</li><li>Nursing Homes</li><li>Real Estate</li><li>Restaurant / Catering / Cooking Classes&nbsp;</li><li>Tourism</li><li>Translation&nbsp;</li></ul></div><div>Data provided by the <a href=\"mailto:ffcb@ffcb.ca\" target=\"_top\">Fédération des francophones de la C.B. </a><br><br><br><img src=\"assets/pin-blue.png\"><b>Tourism Sites - Francophone</b></div><div><br></div><div>Data include:&nbsp;</div><div><br></div><div><ul><li>Accommodation</li><li>Attraction</li><li>Restaurant</li><li>Retail Service</li></ul></div><div><br></div><div>Data provided by the <a href=\"mailto:info@sdecb.com\" target=\"_top\">Société de développement économique de la C.B.</a></div><div><br><img src=\"assets/school.png\"><b>Francophone Schools (K-12)</b></div><div><br></div><div>Data include:&nbsp;</div><div><ul><li>French Immersion Schools</li><li>Francophone Schools</li></ul></div><div><i>Core French</i> is a second language program offered at various grade levels, in which French is studied as a subject rather than as a language of instruction. The program enable a learners to communicate purposefully in French and to provide opportunities for students to develop openness to cultural diversity.&nbsp;</div><div><br><i>Early French Immersion</i>  is a program where French language instruction is offered to students in some subject areas. This program is normally offered to students whose first language is not French. Upon graduation, students will have acquired sufficient language skills to be able to pursue post-secondary studies or work in either official language. <br><br><i>Late Immersion</i> refers to those beginning French Immersion in Grade 6.</div><div>&nbsp; <br><i>Francophone </i>is a program offered to students whose first language is French or who qualify under Section 23 of the Charter of Rights and Freedoms.</div><div><br>Data provided by the Ministry of Education <br><img src=\"assets/pin.png\">WorkBC Centres<br><br>WorkBC Centres, located throughout the province, offer individualized, in-person help to British Columbians who are looking for work.</div><div><br></div><div>WorkBC Centres are accessible, inclusive, and staffed with supportive, knowledgeable people who understand your employment needs. We have a variety of information, services and programs to help you find a job – and keep it long-term.<br><br>Acknowledgments:<br><br>The Francophone Affairs Program would like to thank their partners in the creation of this map:<br><br><a href=\"http://www.data.gov.bc.ca/\" target=\"_blank\"><br><img src=\"assets/databc.png\" width=\"300\"> </a><br><a href=\"http://www.ffcb.ca/\" target=\"_blank\"><br><img src=\"assets/fsfcb.png\" width=\"300\"> </a><br><a href=\"http://www.fpfcb.bc.ca/\" target=\"_blank\"><br><img src=\"assets/fdpfcb.png\" width=\"300\"> </a><br><a href=\"http://www.sdecb.com/\" target=\"_blank\"><br><img src=\"assets/sde.png\" width=\"300\"> </a><br><br><img src=\"assets/rscb.png\"><br></div>"
+                "template": "<div>\n<div>\n   The data for each layer is provided by the Provincial organizations immersed in the specific sector. If you would like to be added to the map, please contact the corresponding sector as listed below. The organizations will regularly provide updates to refresh the map.<br>If you have questions or comments on the current map, please contact the Francophone Affairs Program at <a href=\"mailto:FAP@gov.bc.ca?Subject=Carte%20de%20la%20francophonie%20/%20Francophonie%20map\">FAP@gov.bc.ca</a>.\n   <br><br>\n   <img src=\"assets/pin-blue.png\"><b>Early Childhood Care<br></b><br>Data include: <br>\n   <ul>\n      <li>Group Child Care</li>\n      <li>Family Child Care</li>\n      <li>Preschools</li>\n      <li>Preschool and Group Child Care</li>\n      <li>Strong Starts Program</li>\n   </ul>\n   Data provided by the <a href=\"mailto:info@fpfcb.bc.ca\" target=\"_top\">Fédération des parents francophones de la C.-B. </a><br><br><img src=\"assets/pin-red.png\"><b>Health Professionals<br><br></b>\n</div>\n<div>Data include:&nbsp;</div>\n<div>\n   <ul>\n      <li>Dietitian</li>\n      <li>Holistic Nutritionist</li>\n      <li>Massage Therapist</li>\n      <li>Optician</li>\n      <li>Optometrist</li>\n      <li>Pain Management</li>\n      <li>Physiotherapist</li>\n      <li>Psychologist</li>\n      <li>Radiation</li>\n      <li>Oncology</li>\n      <li>Registered</li>\n      <li>Clinical Counsellor</li>\n      <li>Registered Occupational Therapist</li>\n      <li>Registered Social Worker</li>\n      <li>Speech Therapist</li>\n   </ul>\n</div>\n<div><br></div>\n<div>Data provided by <a href=\"mailto:info@resosante.ca\" target=\"_top\">Réso-Santé</a><br><br><img src=\"assets/pin-yellow.png\"><b>Service Directory</b></div>\n<div><br></div>\n<div>Data include:</div>\n<div>\n   <ul>\n      <li>Accountants</li>\n      <li>Architects</li>\n      <li>Arts / Graphics / Printing / Promotion</li>\n      <li>Chamber of Commerce</li>\n      <li>Churches</li>\n      <li>Community Centres / Yoga Classes</li>\n      <li>Diplomatic Representations</li>\n      <li>Education; Schools, Preschools and Daycare</li>\n      <li>Employment Services</li>\n      <li>Francophone Association</li>\n      <li>Government</li>\n      <li>Hair Styling and Beauty Parlor</li>\n      <li>Health Services</li>\n      <li>Hospitality</li>\n      <li>Immigrant Services</li>\n      <li>Insurance and Financial Services</li>\n      <li>IT Support Services</li>\n      <li>Lawyers</li>\n      <li>Medias / Communication / Web</li>\n      <li>Nursing Homes</li>\n      <li>Real Estate</li>\n      <li>Restaurant / Catering / Cooking Classes&nbsp;</li>\n      <li>Tourism</li>\n      <li>Translation</li>\n   </ul>\n</div>\n<div>Data provided by the <a href=\"mailto:ffcb@ffcb.ca\" target=\"_top\">Fédération des francophones de la C.B. </a><br><br><br><img src=\"assets/pin-blue.png\"><b>Tourism Sites</b></div>\n<div><br></div>\n<div>Data include:</div>\n<div><br></div>\n<div>\n   <ul>\n      <li>Accommodation</li>\n      <li>Attraction</li>\n      <li>Restaurant</li>\n      <li>Retail Service</li>\n   </ul>\n</div>\n<div><br></div>\n<div>Data provided by the <a href=\"mailto:info@sdecb.com\" target=\"_top\">Société de développement économique de la C.B.</a></div>\n<div><br><img src=\"assets/school.png\"><b>Francophone Schools (K-12)</b></div>\n<div><br></div>\n<div>Data include:&nbsp;</div>\n<div>\n   <ul>\n      <li>French Immersion Schools</li>\n      <li>Francophone Schools</li>\n   </ul>\n</div>\n<div><i>Core French</i> is a second language program offered at various grade levels, in which French is studied as a subject rather than as a language of instruction. The program enable a learners to communicate purposefully in French and to provide opportunities for students to develop openness to cultural diversity.&nbsp;</div>\n<div><br><i>Early French Immersion</i> is a program where French language instruction is offered to students in some subject areas. This program is normally offered to students whose first language is not French. Upon graduation, students will have acquired sufficient language skills to be able to pursue post-secondary studies or work in either official language. <br><br><i>Late Immersion</i> refers to those beginning French Immersion in Grade 6.</div>\n<div><br><i>Francophone </i>is a program offered to students whose first language is French or who qualify under Section 23 of the Charter of Rights and Freedoms.</div>\n<div><br>Data provided by the Ministry of Education<br>\n<br>\n<img src=\"assets/pin.png\"><b>WorkBC Centres</b><br><br>WorkBC Centres, located throughout the province, offer individualized, in-person help to British Columbians who are looking for work.</div>\n<div><br></div>\n<div>WorkBC Centres are accessible, inclusive, and staffed with supportive, knowledgeable people who understand your employment needs. We have a variety of information, services and programs to help you find a job – and keep it long-term.<br><br>Acknowledgments:<br>\n<br>\nThe Francophone Affairs Program would like to thank their partners in the creation of this map:<br>\n<table>\n<tr>\n<td style=\"overflow-wrap:anywhere\">\n<a href=\"http://www.data.gov.bc.ca/\" target=\"_blank\"><img src=\"assets/databc.png\"></a>\n</td>\n</tr>\n<tr>\n<td style=\"overflow-wrap:anywhere\">\n<a href=\"http://www.ffcb.ca/\" target=\"_blank\"><img src=\"assets/fsfcb.png\" width=\"197\"></a>\n</td>\n</tr>\n<tr>\n<td style=\"overflow-wrap:anywhere\">\n<a href=\"http://www.fpfcb.bc.ca/\" target=\"_blank\"><img src=\"assets/fdpfcb.png\" width=\"197\"></a>\n</td>\n</tr>\n<tr>\n<td style=\"overflow-wrap:anywhere\">\n<a href=\"http://www.sdecb.com/\" target=\"_blank\"><img src=\"assets/sde.png\" width=\"197\"></a>\n</td>\n</tr>\n<tr>\n<td style=\"overflow-wrap:anywhere\">\n<img src=\"assets/rscb.png\" width=\"197\"></td>\n</tr>\n</table>\n</div>\n</div>"
             },
             "type": "bespoke",
             "instance": "bespoke-101",
