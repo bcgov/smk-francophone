@@ -4,16 +4,16 @@
         "type": "leaflet",
         "location": {
             "center": [
-                -127.82952663705254,
-                54.63326752630257
+                -123.730472017595,
+                54.281748169418684
             ],
             "extent": [
-                -141.97241761600205,
-                48.217476402735954,
-                -113.68663565810301,
-                60.175502362490285
+                -134.30849940454382,
+                48.56135442050082,
+                -113.15244463064623,
+                59.305158590922524
             ],
-            "zoom": 4.295556789799106
+            "zoom": 4.92490474080675
         },
         "baseMap": "Imagery",
         "device": "auto"
@@ -130,7 +130,7 @@
                     "id": "website-url",
                     "name": "WEBSITE_URL",
                     "title": "Website",
-                    "visible": true
+                    "visible": false
                 },
                 {
                     "id": "image-url",
@@ -163,6 +163,12 @@
                     "visible": false
                 },
                 {
+                    "id": "francophone-program-offered",
+                    "name": "FRANCOPHONE_PROGRAM_OFFERED",
+                    "title": "Francophone Program Offered",
+                    "visible": true
+                },
+                {
                     "id": "site-geocoded-ind",
                     "name": "SITE_GEOCODED_IND",
                     "title": "SITE_GEOCODED_IND",
@@ -172,12 +178,6 @@
                     "id": "core-french-offered",
                     "name": "CORE_FRENCH_OFFERED",
                     "title": "Core French Offered",
-                    "visible": true
-                },
-                {
-                    "id": "district-name",
-                    "name": "DISTRICT_NAME",
-                    "title": "District Name",
                     "visible": true
                 },
                 {
@@ -193,27 +193,27 @@
                     "visible": true
                 },
                 {
-                    "id": "facility-type",
-                    "name": "FACILITY_TYPE",
-                    "title": "School Type",
-                    "visible": true
-                },
-                {
-                    "id": "francophone-program-offered",
-                    "name": "FRANCOPHONE_PROGRAM_OFFERED",
-                    "title": "Francophone Program Offered",
-                    "visible": true
-                },
-                {
                     "id": "late-french-immersion-offered",
                     "name": "LATE_FRENCH_IMMERSION_OFFERED",
                     "title": "Late French Immersion Offered",
                     "visible": true
                 },
                 {
+                    "id": "district-name",
+                    "name": "DISTRICT_NAME",
+                    "title": "District Name",
+                    "visible": true
+                },
+                {
                     "id": "school-category",
                     "name": "SCHOOL_CATEGORY",
                     "title": "Category",
+                    "visible": true
+                },
+                {
+                    "id": "facility-type",
+                    "name": "FACILITY_TYPE",
+                    "title": "School Type",
                     "visible": true
                 },
                 {
@@ -1402,7 +1402,7 @@
                 "point": true,
                 "title": " "
             },
-            "popupTemplate": "<div>\n<b>{{ feature.properties['OCCUPANT_NAME'] }}</b>\n<br>\n({{ feature.properties['SERVICE_NAME'] }})<br>\n<table border=\"0\" width=\"100%\">\n<tbody>\n<tr colspan=\"2\">\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Description</b></td>\n</tr><tr>\n</tr><tr>\n<td style=\"overflow-wrap:anywhere\" colspan=\"2\">{{ feature.properties['DESCRIPTION'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Contacts</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['CONTACT_NAMES'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Address</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['STREET_ADDRESS'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Locality</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['LOCALITY'] }} </td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Region</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['TOURISM_AREA'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Email</b></td>\n</tr>\n<tr>\n<td><a v-bind:href=\"'mailto:' + feature.properties.CONTACT_EMAIL\">{{ feature.properties.CONTACT_EMAIL }}</a></td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Phone</b></td>\n</tr>\n<tr>\n<td>{{ feature.properties['CONTACT_PHONE'] }}</td>\n</tr>\n<tr>\n<td valign=\"top\"><b>Website</b></td>\n</tr>\n<tr>\n<td style=\"overflow-wrap:anywhere\"><a v-bind:href=\"feature.properties.WEBSITE_URL\" target=\"new\">{{ feature.properties['WEBSITE_URL'] }}</a></td>\n</tr>\n</tbody>\n</table></div>"
+            "popupTemplate": ""
         }
     ],
     "tools": [
