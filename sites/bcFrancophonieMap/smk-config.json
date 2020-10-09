@@ -1460,31 +1460,37 @@
                 {
                     "id": "tourist-sites",
                     "isVisible": true,
-                    "title": "Tourism Sites"
+                    "title": "Tourism Sites",
+                    "alwaysShowLegend": true
                 },
                 {
                     "id": "health",
                     "isVisible": true,
-                    "title": "Health Professionals"
+                    "title": "Health Professionals",
+                    "alwaysShowLegend": true
                 },
                 {
                     "id": "service-directory",
                     "isVisible": true,
-                    "title": "Service Directory"
+                    "title": "Service Directory",
+                    "alwaysShowLegend": true
                 },
                 {
                     "id": "early-childhood",
                     "isVisible": true,
-                    "title": "Early Childhood Care"
+                    "title": "Early Childhood Care",
+                    "alwaysShowLegend": true
                 },
                 {
                     "id": "schools-k-12",
                     "isVisible": true,
-                    "title": "Schools offering French Programs (K-12)"
+                    "title": "Schools offering French Programs (K-12)",
+                    "alwaysShowLegend": true
                 },
                 {
                     "id": "workbc-centres",
-                    "isVisible": true
+                    "isVisible": true,
+                    "alwaysShowLegend": true
                 }
             ],
             "showTitle": true
@@ -1670,10 +1676,10 @@
             },
             "type": "query",
             "instance": "schools-k-12--schools-k-12-query-0",
-            "enabled": true,
+            "enabled": false,
             "showTitle": false,
             "title": "Find Schools",
-            "position": "shortcut-menu",
+            "position": "toolbar",
             "icon": "school"
         }
     ],
