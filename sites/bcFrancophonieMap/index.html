@@ -3,7 +3,7 @@
     <head>
         <title>BC Francophone Services Map</title>
         <!-- SMK BOOTSTRAP - - - - - - - -->
-        <script src="./node_modules/smk/dist/smk.js" smk-container-sel="#smk-map-frame"></script>
+        <script src="./node_modules/smk/dist/smk.js"></script>
         <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
         <!-- - - - - - - - - - - - - - - -->
         <style>
@@ -52,6 +52,7 @@
     </head>
 
     <body>
+    <script src="./smk-init.js"></script>
         <div id="header">
             <img src="assets/bc-gov-logo-transparent.png">
             <div id="header-title">BC Francophone Services Map</div>
@@ -59,24 +60,4 @@
         <div id="smk-map-frame"></div>
 
     </body>
-
-
-    <!--head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>BC Francophonie Map</title>
-        <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
-    </head>
-
-    <body>
-        <!-- <header>BC Francophonie Map</header> -->
-
-        <!--article>
-            <div id="smk-map-frame"></div>
-        </article>
-
-        <!-- <footer>Application constructed by smk-cli at 2020-08-27T19:05:49.052Z</footer> -->
-
-        <!--script src="./node_modules/smk/dist/smk.js"></script>
-        <script src="./smk-init.js"></script>
-    </body-->
 </html>
