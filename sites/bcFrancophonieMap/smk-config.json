@@ -1448,7 +1448,7 @@
             "command": {
                 "allVisibility": true,
                 "filter": true,
-                "legend": true
+                "legend": false
             },
             "glyph": {
                 "visible": "check_circle",
@@ -1672,14 +1672,14 @@
             "within": false,
             "command": {
                 "within": true,
-                "select": true
+                "select": false
             },
             "type": "query",
             "instance": "schools-k-12--schools-k-12-query-0",
-            "enabled": false,
+            "enabled": true,
             "showTitle": false,
             "title": "Find Schools",
-            "position": "toolbar",
+            "position": "list-menu",
             "icon": "school"
         }
     ],
