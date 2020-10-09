@@ -291,7 +291,76 @@
                             "uniqueAttribute": "LOCALITY"
                         }
                     ],
-                    "predicate": []
+                    "predicate": {
+                        "operator": "and",
+                        "arguments": [
+                            {
+                                "operator": "equals",
+                                "arguments": [
+                                    {
+                                        "operand": "parameter",
+                                        "id": "parameter-0"
+                                    },
+                                    {
+                                        "operand": "attribute",
+                                        "name": "FRANCOPHONE_PROGRAM_OFFERED"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "equals",
+                                "arguments": [
+                                    {
+                                        "operand": "parameter",
+                                        "id": "parameter-1"
+                                    },
+                                    {
+                                        "operand": "attribute",
+                                        "name": "CORE_FRENCH_OFFERED"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "equals",
+                                "arguments": [
+                                    {
+                                        "operand": "parameter",
+                                        "id": "parameter-2"
+                                    },
+                                    {
+                                        "operand": "attribute",
+                                        "name": "EARLY_FRENCH_IMMERSION_OFFERED"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "equals",
+                                "arguments": [
+                                    {
+                                        "operand": "parameter",
+                                        "id": "parameter-3"
+                                    },
+                                    {
+                                        "operand": "attribute",
+                                        "name": "LATE_FRENCH_IMMERSION_OFFERED"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "equals",
+                                "arguments": [
+                                    {
+                                        "operand": "parameter",
+                                        "id": "parameter-4"
+                                    },
+                                    {
+                                        "operand": "attribute",
+                                        "name": "LOCALITY"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                 }
             ],
             "useClustering": true,
