@@ -1,6 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>BC Francophone Services Map</title>
+        <!-- SMK BOOTSTRAP - - - - - - - -->
+        <script src="../../../dist/smk.js" smk-container-sel="#smk-map-frame"></script>
+        <!-- - - - - - - - - - - - - - - -->
+        <style>
+            #header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 70px;
+
+                border-bottom:      2px solid #fcba19;
+                background-color: #036;
+                font-family:        Helvetica,Arial,sans-serif;
+
+                display:            flex;
+                justify-content:    flex-start;
+                align-items:        center;
+            }
+
+            #header img {
+                margin-left:    10px;
+                margin-bottom:  10px;
+            }
+
+            #header-title {
+                color:          white;
+                margin-left:    20px;
+
+                display:        flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:    flex-start;
+                font-size:      30px;
+            }
+
+            #smk-map-frame {
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <img src="../bc-gov-logo-transparent.png">
+            <div id="header-title"></div>
+        </div>
+        <div id="smk-map-frame"></div>
+    </body>
+
+
+    <!--head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BC Francophonie Map</title>
         <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
@@ -9,13 +68,13 @@
     <body>
         <!-- <header>BC Francophonie Map</header> -->
 
-        <article>
+        <!--article>
             <div id="smk-map-frame"></div>
         </article>
 
         <!-- <footer>Application constructed by smk-cli at 2020-08-27T19:05:49.052Z</footer> -->
 
-        <script src="./node_modules/smk/dist/smk.js"></script>
+        <!--script src="./node_modules/smk/dist/smk.js"></script>
         <script src="./smk-init.js"></script>
-    </body>
+    </body-->
 </html>

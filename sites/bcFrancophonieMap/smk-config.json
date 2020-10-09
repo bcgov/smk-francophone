@@ -295,7 +295,7 @@
                 }
             ],
             "useClustering": true,
-            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW&styles=3601&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
+            "dataUrl": "https://openmaps.gov.bc.ca/geo/pub/WHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW/ows?service=WMS&request=GetMap&version=1.1.1&layers=pub%3AWHSE_IMAGERY_AND_BASE_MAPS.GSR_SCHOOLS_K_TO_12_SVW&styles=7970&format=application/json;type=geojson&transparent=true&cql_filter=include&srs=EPSG%3A4326&width=645&height=728&bbox=-131.8579103,46.6645175,-117.6855469,56.547372",
             "style": {
                 "marker": true,
                 "stroke": false,
@@ -1480,7 +1480,7 @@
                 {
                     "id": "schools-k-12",
                     "isVisible": true,
-                    "title": "French Immersion/Francophone Schools (K-12)"
+                    "title": "Schools offering French Programs (K-12)"
                 },
                 {
                     "id": "workbc-centres",
